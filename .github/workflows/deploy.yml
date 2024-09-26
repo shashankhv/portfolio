@@ -44,7 +44,7 @@ jobs :
                     script : |
                       rm -rf /var/www/dist/*
                       mkdir -p /var/www/dist/
-                      scp -r ${{ github.workspace }}/dist/* ${{ secrets.SERVER_USER }}@ ${{secrets.SERVER_HOST}}:/var/www/dist/
+                      scp -r ${{ github.workspace }}/dist/* ${{ secrets.SERVER_USER }}@${{secrets.SERVER_HOST}}:/var/www/dist/
                       sudo systemctl restart nginx
 
 
