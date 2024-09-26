@@ -39,8 +39,8 @@ jobs :
                       key: ${{ secrets.SSH_PRIVATE_KEY }}
                       port: 22
                       source: "./dist/*"
-                      target: "/var/www/dist"
-                      
+                      target: "/var/www/"
+
               - name: Restart Nginx on the server
                 uses: appleboy/ssh-action@v0.1.5
                 with:
