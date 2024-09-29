@@ -17,7 +17,6 @@ import { EffectComposer, Bloom } from '@react-three/postprocessing'
 
 const Hero = () => {
 
-        const thisRef = useRef()
 
         const isSmall = useMediaQuery({maxWidth : 440})    
         const isMobile = useMediaQuery({maxWidth : 768})
